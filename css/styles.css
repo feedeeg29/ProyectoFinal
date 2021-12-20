@@ -75,9 +75,11 @@ html {
       border: 3px solid black;
       border-radius: 30px; }
   .nosotros {
-    min-height: 100%; }
+    display: flex;
+    flex: wrap;
+    height: 100%; }
     .nosotros h1 {
-      font-size: 50px;
+      font-size: 30px;
       color: blanchedalmond; }
     .nosotros h2 {
       font-size: 15px; }

@@ -97,8 +97,10 @@ max-width: 100%;
 border: 3px solid black;
 border-radius: 30px;}}}
 .nosotros{
-    min-height: 100%;
-    h1{ font-size: 50px;
+    display: flex;
+    flex: wrap;
+    height: 100%;
+    h1{ font-size: 30px;
         color: blanchedalmond;}
     h2{font-size: 15px;}
     p{font-size: 10px;}

@@ -1,6 +1,7 @@
 html{
     width: 100%;
-    height: 100%;}
+    height: 100%;
+    background-color: rgb(53, 51, 51);}
 // General Dispositivos Pequeños 
 @media  screen and (min-width: 1px) and (max-width:991px)  {
     #header{
@@ -120,6 +121,8 @@ border-radius: 30px;}}}
     margin: 0;
     padding: 0;
     width: 100%;
+    min-height: 100vh;
+    height: 100%;
     flex-wrap: wrap;
     background-color: rgb(53, 51, 51);
     display: grid;}

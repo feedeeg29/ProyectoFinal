@@ -1,7 +1,4 @@
-html{
-    width: 100%;
-    height: 100%;
-    background-color: #353333;}
+@import "__parametros.scss";
 // General Dispositivos Pequeños 
 @media  screen and (min-width: 1px) and (max-width:991px)  {
     #header{
@@ -67,9 +64,11 @@ textarea{
     background-color: rgb(53, 51, 51);
 }
 .footer {
-    @include footer;
+    @include flex(flex-end,space-evenly,center,1em,absolute);
+    display: flex;
     background-color: #d663a3;
     border: solid 3px black;
+    margin: 0px 5px 5px 0px;
     width: 100%;
 
 }
@@ -86,10 +85,10 @@ textarea{
     padding-top: 1px;
     .carousel-item{
 img{
-max-height: 100%;
-max-width: 100%;
-border: 3px solid black;
-border-radius: 30px;}}}
+    max-height: 100%;
+    max-width: 100%;
+    border: 3px solid black;
+    border-radius: 30px;}}}
 .nosotros{
     display: flex;
     flex: wrap;
@@ -99,18 +98,88 @@ border-radius: 30px;}}}
     h2{font-size: 15px;}
     p{font-size: 10px;}
     }
-@mixin tamaños {
-    height: auto;
-    width: 400px;}
-@mixin footer{
-    display: flex;
-    align-self: flex-end;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 1em;
-    margin: 0px 5px 5px 0px;
-    position: absolute;}
-}
+    .main_calzado{
+        display: grid;
+        background-color: #353333;
+        padding: 0px 10px 0px 10px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        place-content: center;
+        justify-content: center;
+        grid-template-areas: 
+        "calzado_1"
+        "calzado_2" 
+        "calzado_3"
+        "calzado_4"
+        "calzado_5"
+        "calzado_6"
+        "calzado_7"
+        "calzado_8"
+        "calzado_9"
+        "calzado_10"
+        "calzado_11"
+        "calzado_12"
+        "calzado_13"
+        "calzado_14"
+        "calzado_15";
+    
+    #cal_1{
+        grid-area: calzado_1;
+        place-content: center;
+    }
+    #cal_2{
+        grid-area: calzado_2;
+        place-content: center;}
+    #cal_3{
+        grid-area: calzado_3;
+        place-content: center;}
+    #cal_4{
+        grid-area: calzado_4;
+        place-content: center;}
+    #cal_5{
+        grid-area: calzado_5;
+        place-content: center;}
+    #cal_6{
+        grid-area: calzado_6;
+        place-content: center;}
+    #cal_6{
+        grid-area: calzado_6;
+        place-content: center;}
+    #cal_7{
+        grid-area: calzado_7;
+        place-content: center;}
+    #cal_8{
+        grid-area: calzado_8;
+        place-content: center;}
+    #cal_9{
+        grid-area: calzado_9;
+        place-content: center;}
+    #cal_10{
+        grid-area: calzado_10;
+        place-content: center;}
+    #cal_11{
+        grid-area: calzado_11;
+        place-content: center;}
+    #cal_12{
+        grid-area: calzado_12;
+        place-content: center;}
+    #cal_13{
+        grid-area: calzado_13;
+        place-content: center;}
+    #cal_14{
+        grid-area: calzado_14;
+        place-content: center;}
+    #cal_15{
+        grid-area: calzado_15;
+        place-content: center;}
+    img {
+        max-height: 100%;
+        width: 100%;
+        max-width:  500px;
+        border: 3px solid black;
+        border-radius: 30px;
+    }
+    }}
 // General Desktop
 @media  screen and (min-width: 992px) {
     #header{
@@ -130,7 +199,7 @@ border-radius: 30px;}}}
     height: 100%;
     flex-wrap: wrap;
     background-color: #353333;
-    display: grid;}
+}
 .Contacto{
     display: flex;
     justify-content: center;
@@ -177,18 +246,78 @@ textarea{
     max-height: 100%;
     background-color: rgb(53, 51, 51);
 }
-footer {
-    height: 50px;
+.footer {
+    @include flex(flex-start,space-evenly,center,1em,absolute);
     display: flex;
-    background-color: #d663a3;
-    border: solid 3px #000000;
+    height: 50px;
+    background-color:map-get($estilos,color);
+    border: map-get($estilos,borde);
     width: 100%;
-    text-align: center;
-    align-self: flex-end;
-    justify-content: space-evenly;
-    margin: 0px 5px 5px 0px;
-    position: absolute;
-}
+    margin: map-get($estilos, margen);}
+.body_calzado{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "calzado_1 calzado_2 calzado_3"
+    "calzado_4 calzado_5 calzado_6"
+    "calzado_7 calzado_8 calzado_9"
+    "calzado_10 calzado_11 calzado_12"
+    "calzado_13 calzado_14 calzado_15";}
+    #cal_1{
+        grid-area: calzado_1;
+        place-content: center;}
+    #cal_2{
+        grid-area: calzado_2;
+        place-content: center;}
+    #cal_3{
+        grid-area: calzado_3;
+        place-content: center;}
+    #cal_4{
+        grid-area: calzado_4;
+        place-content: center;}
+    #cal_5{
+        grid-area: calzado_5;
+        place-content: center;}
+    #cal_6{
+        grid-area: calzado_6;
+        place-content: center;}
+    #cal_6{
+        grid-area: calzado_6;
+        place-content: center;}
+    #cal_7{
+        grid-area: calzado_7;
+        place-content: center;}
+    #cal_8{
+        grid-area: calzado_8;
+        place-content: center;}
+    #cal_9{
+        grid-area: calzado_9;
+        place-content: center;}
+    #cal_10{
+        grid-area: calzado_10;
+        place-content: center;}
+    #cal_11{
+        grid-area: calzado_11;
+        place-content: center;}
+    #cal_12{
+        grid-area: calzado_12;
+        place-content: center;}
+    #cal_13{
+        grid-area: calzado_13;
+        place-content: center;}
+    #cal_14{
+        grid-area: calzado_14;
+        place-content: center;}
+    #cal_15{
+        grid-area: calzado_15;
+        place-content: center;}
+        img {
+            max-height: 100%;
+            max-width: 300px;
+            border: 3px solid black;
+            border-radius: 30px;
+        }
 #main{
     min-height: 78vh;
     .carousel-inner{

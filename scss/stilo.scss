@@ -5,7 +5,6 @@ html{
 // General Dispositivos Pequeños 
 @media  screen and (min-width: 1px) and (max-width:991px)  {
     #header{
-        grid-area: header;
         background-color:rgb(182, 85, 132) ;
         padding: 0px;
         width: 100%;
@@ -68,17 +67,11 @@ textarea{
     background-color: rgb(53, 51, 51);
 }
 footer {
-    grid-area: footer;
-    display: flex;
-    background-color: rgb(214, 99, 163);
+    @include flex-center;
+    background-color: #d663a3;
     border: solid 3px black;
     width: 100%;
-    text-align: center;
-    padding: 1em;
-    align-self: flex-end;
-    justify-content: space-evenly;
-    margin: 0px 5px 5px 0px;
-    position: absolute;
+
 }
 #main{
     min-height: 78vh;
@@ -106,6 +99,18 @@ border-radius: 30px;}}}
     h2{font-size: 15px;}
     p{font-size: 10px;}
     }
+@mixin tamaños {
+    height: auto;
+    width: 400px;}
+@mixin flex-center {
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 1em;
+    margin: 0px 5px 5px 0px;
+    position: absolute;
+}
 }
 // General Desktop
 @media  screen and (min-width: 992px) {

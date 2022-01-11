@@ -97,7 +97,7 @@ img{
     h2{font-size: 15px;}
     p{font-size: 10px;}
     }
-    .main_calzado{
+    .main_galeria{
         display: grid;
         background-color: #353333;
         padding: 0px 10px 0px 10px;
@@ -122,53 +122,53 @@ img{
         "calzado_14"
         "calzado_15";
     
-    #cal_1{
+    #img_1{
         grid-area: calzado_1;
-        place-content: center;
-    }
-    #cal_2{
+        place-content: center;}
+    #img_2{
         grid-area: calzado_2;
         place-content: center;}
-    #cal_3{
+    #img_3{
         grid-area: calzado_3;
         place-content: center;}
-    #cal_4{
+    #img_4{
         grid-area: calzado_4;
         place-content: center;}
-    #cal_5{
+    #img_5{
         grid-area: calzado_5;
         place-content: center;}
-    #cal_6{
+    #img_6{
         grid-area: calzado_6;
         place-content: center;}
-    #cal_6{
+    #img_6{
         grid-area: calzado_6;
         place-content: center;}
-    #cal_7{
+    #img_7{
         grid-area: calzado_7;
         place-content: center;}
-    #cal_8{
+    #img_8{
         grid-area: calzado_8;
         place-content: center;}
-    #cal_9{
+    #img_9{
         grid-area: calzado_9;
         place-content: center;}
-    #cal_10{
+    #img_10{
         grid-area: calzado_10;
         place-content: center;}
-    #cal_11{
+    #img_11{
         grid-area: calzado_11;
         place-content: center;}
-    #cal_12{
+    #img_12{
         grid-area: calzado_12;
         place-content: center;}
-    #cal_13{
+    #img_13{
         grid-area: calzado_13;
         place-content: center;}
-    #cal_14{
+    #img_14{
         grid-area: calzado_14;
-        place-content: center;}
-    #cal_15{
+        place-content: center;
+        place-self: center;}
+    #img_15{
         grid-area: calzado_15;
         place-content: center;}
     img {
@@ -248,67 +248,69 @@ textarea{
 .footer {
     @include flex(flex-start,space-evenly,center,1em,absolute);
     display: flex;
-    // height: 50px;
     background-color:map-get($estilos,color);
     border: map-get($estilos,borde);
     width: 100%;
     margin: map-get($estilos, margen);}
-.body_calzado{
+.main_galeria{
     display: grid;
+    background-color: #353333;
+    padding: 20px 10px 0px 10px;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 33% 33% 33% ;
     grid-template-areas: 
     "calzado_1 calzado_2 calzado_3"
     "calzado_4 calzado_5 calzado_6"
     "calzado_7 calzado_8 calzado_9"
     "calzado_10 calzado_11 calzado_12"
     "calzado_13 calzado_14 calzado_15";
-    #cal_1{
+    #img_1{
         grid-area: calzado_1;
-        place-content: center;}
-    #cal_2{
+        // place-content: center;}
+    }
+    #img_2{
         grid-area: calzado_2;
         place-content: center;}
-    #cal_3{
+    #img_3{
         grid-area: calzado_3;
         place-content: center;}
-    #cal_4{
+    #img_4{
         grid-area: calzado_4;
         place-content: center;}
-    #cal_5{
+    #img_5{
         grid-area: calzado_5;
         place-content: center;}
-    #cal_6{
+    #img_6{
         grid-area: calzado_6;
         place-content: center;}
-    #cal_6{
+    #img_6{
         grid-area: calzado_6;
         place-content: center;}
-    #cal_7{
+    #img_7{
         grid-area: calzado_7;
         place-content: center;}
-    #cal_8{
+    #img_8{
         grid-area: calzado_8;
         place-content: center;}
-    #cal_9{
+    #img_9{
         grid-area: calzado_9;
         place-content: center;}
-    #cal_10{
+    #img_10{
         grid-area: calzado_10;
         place-content: center;}
-    #cal_11{
+    #img_11{
         grid-area: calzado_11;
         place-content: center;}
-    #cal_12{
+    #img_12{
         grid-area: calzado_12;
         place-content: center;}
-    #cal_13{
+    #img_13{
         grid-area: calzado_13;
         place-content: center;}
-    #cal_14{
+    #img_14{
         grid-area: calzado_14;
         place-content: center;}
-    #cal_15{
+    #img_15{
         grid-area: calzado_15;
         place-content: center;}
         img {

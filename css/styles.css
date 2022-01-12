@@ -42,7 +42,9 @@ html {
         resize: vertical;
         font-family: 'Mochiy Pop P One', sans-serif; }
   #letras {
-    color: blanchedalmond; }
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center; }
   #zona {
     border: blanchedalmond solid 1px; }
   .body {
@@ -190,7 +192,9 @@ html {
         resize: vertical;
         font-family: 'Mochiy Pop P One', sans-serif; }
   #letras {
-    color: #ffebcd; }
+    color: #ffebcd;
+    display: flex;
+    justify-content: center; }
   #zona {
     border: #ffebcd solid 1px; }
   .body {

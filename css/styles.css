@@ -75,17 +75,6 @@ html {
       max-width: 100%;
       border: 3px solid black;
       border-radius: 30px; }
-  .nosotros {
-    display: flex;
-    flex: wrap;
-    height: 100%; }
-    .nosotros h1 {
-      font-size: 30px;
-      color: blanchedalmond; }
-    .nosotros h2 {
-      font-size: 15px; }
-    .nosotros p {
-      font-size: 10px; }
   .main_galeria {
     display: grid;
     background-color: #353333;
@@ -279,14 +268,7 @@ html {
       max-height: 78vh;
       max-width: 100%;
       border: 3px solid #000000;
-      border-radius: 30px; }
-  .nosotros h1 {
-    font-size: 50px;
-    color: #ffebcd; }
-  .nosotros h2 {
-    font-size: 15px; }
-  .nosotros p {
-    font-size: 10px; } }
+      border-radius: 30px; } }
 
 @media screen and (min-width: 280px) and (max-width: 283px) {
   #main {

@@ -1,9 +1,9 @@
 {
-  "name": "nueva-carpeta",
+  "name": "proyecto_final",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss scss/stilo.scss css/styles.css",
+    "build-css": "node-sass --include-path scss Root/scss/stilo.scss Root/css/styles.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
